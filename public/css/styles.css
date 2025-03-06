@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    color:brown;
+    font-style: italic;
+    
+}
+h2{
+    margin: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    color:brown;
+    font-style: italic;
+    
+}
+header{
+    background-color: peachpuff;
+    padding: 30px;
+}
+main {
+    text-align: center;
+    padding-top: 20px;
+    height:600px;
+    background-color: blanchedalmond;
+
+}
+.riddle{
+    display: flexbox;
+
+}
+.respuesta button{
+   size: 50px;
+
+}
+.respuesta{
+    background-color: darksalmon;
+    color: chocolate;
+    border-radius: 50;
+   
+}
+
+img{
+    width:30%;
+    height:auto;
+}
+#error{
+    color:red;
+}
+.cont{
+    padding: 10px;
+    border-radius: 40%;
+    border-color: black;
+    border-width: 1px;
+    background-color: aquamarine;
+    
+    width: fit-content;
+
+}
+fieldset{
+    padding: 5px;
+    width: fit-content;
+    border-radius: 40%;
+    padding: 10;
+}
+table.redTable {
+    border: 2px solid #A40808;
+    background-color: #EEE7DB;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.redTable td, table.redTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.redTable tbody td {
+    font-size: 13px;
+  }
+  table.redTable tr:nth-child(even) {
+    background: #F5C8BF;
+  }
+  table.redTable thead {
+    background: #A40808;
+  }
+  table.redTable thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #A40808;
+  }
+  table.redTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.redTable tfoot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #A40808;
+  }
+  table.redTable tfoot td {
+    font-size: 13px;
+  }
+  table.redTable tfoot .links {
+    text-align: right;
+  }
+  table.redTable tfoot .links a{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A40808;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }

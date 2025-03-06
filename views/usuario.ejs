@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <table class="redTable">
+        <th>
+            <tr>
+                <td>Nombre</td>
+            <td>apellido</td>
+            <td>direccion</td>
+            <td>pais</td>
+            <td>numero de pedidos</td>
+            <td>saldo de cuenta</td>
+            <td>suscrito</td>
+            </tr>
+        </th>
+        <tr>
+            <td><%= user.nombre %></td>
+            <td><%= user.apellido %></td>
+            <td><%= user.direccion %></td>
+            <td><%= user.pais %></td>
+            <td><%= user.pedNum %></td>
+            <td><%= user.saldo %></td>
+            <% if (user.suscrito) { %>
+                <td><img src="/img/ok.jpg" width="10px" height="10px"></td>
+              <% } else { %>
+                <td><img src="/img/x.jpg" width="10px" height="10px"</td>
+              <% } %>
+            
+        </tr>
+    </table>
+</body>
+</html>

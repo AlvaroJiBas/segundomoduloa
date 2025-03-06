@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+  
+        <label for="saldo">
+            Saldo:
+        </label>
+        <input type="number" name="saldo" id="saldo">
+        
+        <label for="recientes">
+            recientes:
+        </label>
+        <input type="number" name="recientes" id="recientes">
+        
+        <label for="cliente">
+            Cliente preferente?:
+        </label>
+        <input type="checkbox" name="cliente" id="cliente">
+        <button type="submit" onclick="comprobar()"> Enviar</button>
+        <script>
+            function comprobar() {
+                var saldo = document.getElementById("saldo").value;
+            var recientes = document.getElementById("recientes").value;
+            var cliente = document.getElementById("cliente").checked;
+       
+            if (saldo > 10000 && cliente){
+                alert("tienes un tipo de interes alto");
+            }
+            if (saldo > 10000 && !cliente){
+                alert("quieres abrir una cuenta premium?");
+            }
+            if (saldo <=10000 && saldo >= 1000 && recientes < 3){
+                alert("quieres mantener el saldo?");
+            }
+            if (saldo < 1000){
+                alert("eres pobre");
+            }
+        };
+          
+        </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"nombre":"asd","contrasena":"asd","contrasenarep":"asd","nacimiento":"2025-02-27","email":"asdasd@sadasd.com"}
