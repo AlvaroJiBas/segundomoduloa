@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva historia</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/proyecto.js" defer></script>
+</head>
+<body>
+    <form action="/proyecto" method="post" onsubmit="return validarTodo()">
+        <fieldset title="Detalles de la historia">
+            <label for="historia"> Historia de Usuario:</label>
+            <textarea name="historia" id="historia" cols="50" rows="5" placeholder="Usar formato COMO...QUIERO... PARA..."></textarea>
+            <label for="prioridad"> Prioridad</label>
+            <select name="prioridad" id="prioridad">
+                <option value="1" >Baja</option>
+                <option value="2" selected>Media</option>
+                <option value="3">Alta</option>
+            </select>
+            <label for="fecha"> Fecha de Captura:</label>
+            <input type="date" name="fecha" id="fecha">
+            <label for="responsable"> Responsable</label>
+            <input type="text" name="responsable" id="responsable" placeholder="Nombre de responsable">
+            <button type="submit" id="enviar"  >Enviar </button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

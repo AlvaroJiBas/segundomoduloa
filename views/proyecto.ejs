@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de historias</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+   
+    <h1>Listado de historias de usuario</h1>
+    <table class="azulGris">
+        <th>
+        <tr>
+            <td>Historia de usuario</td>
+            <td>Prioridad</td>
+            <td>Fecha de captura</td>
+            <td> Responsable</td>
+        </tr>
+        </th>
+        <% historias.forEach(historia => { %>
+           
+        <tr>
+          
+              <td><%= historia.historia %></td>
+              <td><%= historia.prioridad %></td>
+              <td><%= historia.fecha %></td>
+              <td><%= historia.responsable %></td>
+
+          
+            
+        
+        </tr>
+        <% }); %>
+    </table>
+    <a href="/proyectonuevo"><button> Nueva historia</button></a>
+</body>
+</html>
