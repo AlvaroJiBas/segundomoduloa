@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Guitarra</h1>
+    <label for="marca">Marca:</label>
+    <input type="text" name="marca" id="marca">
+    <label for="cuerdas">cuerdas;</label>
+    <input type="number" name="cuerdas" id="cuerdas" value="6">
+    <button onclick="tocarLaGuitarra()">Tocar</button>
+    <script type="module" >
+        import {Guitarra, GuitarraElectrica} from "./Guitarra.js";
+        var marca=document.getElementById("marca").value;
+        var cuerdas = document.getElementById("cuerdas").value;
+        function tocarLaGuitarra() {
+            var guitarra = new Guitarra(marca,cuerdas);
+               alert(guitarra.tocar());        
+        }
+        window.tocarLaGuitarra=tocarLaGuitarra;
+    </script>
+</body>
+</html>

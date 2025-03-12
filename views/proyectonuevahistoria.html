@@ -8,8 +8,10 @@
     <script src="/js/proyecto.js" defer></script>
 </head>
 <body>
+    <main>
+    <div class="formulario">
     <form action="/proyecto" method="post" onsubmit="return validarTodo()">
-        <fieldset title="Detalles de la historia">
+        <fieldset legend="Detalles de la historia">
             <label for="historia"> Historia de Usuario:</label>
             <textarea name="historia" id="historia" cols="50" rows="5" placeholder="Usar formato COMO...QUIERO... PARA..."></textarea>
             <label for="prioridad"> Prioridad</label>
@@ -25,6 +27,7 @@
             <button type="submit" id="enviar"  >Enviar </button>
         </fieldset>
     </form>
-    
+</main>
+</div>
 </body>
 </html>
